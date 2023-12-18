@@ -3,7 +3,7 @@ name: Docker Build
 on:
   push:
     branches: ['main']
-    
+    paths: ['papka/push_here_pls/**']
 
 
 jobs:
