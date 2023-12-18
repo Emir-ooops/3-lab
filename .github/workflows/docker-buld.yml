@@ -20,12 +20,12 @@ jobs:
       run: |
         docker build --build-arg GITHUB_TOKEN=$GITHUB_TOKEN -t my-docker-image ./papka
 
-    - name: Save hello.txt
+    - name: Save emir.txt
       run: |
-        docker run --rm -v $(pwd):/output my-docker-image cp /hello.txt /output/hello.txt
+        docker run --rm -v $(pwd):/output my-docker-image cp /emir.txt /output/emir.txt
 
-    - name: Upload hello.txt
+    - name: Upload emir.txt
       uses: actions/upload-artifact@v2
       with:
-        name: hello-text-file
-        path: hello.txt
+        name: emir-text-file
+        path: emir.txt
