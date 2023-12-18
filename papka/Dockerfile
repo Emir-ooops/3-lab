@@ -9,7 +9,7 @@ RUN git config --global user.name "Emir-ooops"
 
 ARG GITHUB_TOKEN
 
-RUN git clone https://username:${GITHUB_TOKEN}@github.com/Emir-ooops/3-lab.git/repo
+RUN git clone https://username:${GITHUB_TOKEN}@github.com/Emir-ooops/3-lab.git /repo
 RUN cp /hello.txt /repo
 WORKDIR /repo
 RUN git add hello.txt
