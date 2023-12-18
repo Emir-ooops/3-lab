@@ -18,7 +18,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
       run: |
-        docker build --build-arg GITHUB_TOKEN=$GITHUB_TOKEN -t my-docker-image ./cloud/lab3
+        docker build --build-arg GITHUB_TOKEN=$GITHUB_TOKEN -t my-docker-image ./papka
 
     - name: Save hello.txt
       run: |
